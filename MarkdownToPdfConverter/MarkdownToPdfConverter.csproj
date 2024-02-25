@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>MarkdownToPdfConverter</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\fonts\arial\Arial.ttf" />
+    <None Remove="resources\fonts\arial\Arial_Bold.ttf" />
+    <None Remove="resources\fonts\arial\Arial_Bold_Italic.ttf" />
+    <None Remove="resources\fonts\arial\Arial_Italic.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.59" />
+    <PackageReference Include="MarkdownSharp" Version="2.0.5" />
+    <PackageReference Include="PDFsharp" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="resources\fonts\arial\Arial.ttf" />
+    <EmbeddedResource Include="resources\fonts\arial\Arial_Bold.ttf" />
+    <EmbeddedResource Include="resources\fonts\arial\Arial_Bold_Italic.ttf" />
+    <EmbeddedResource Include="resources\fonts\arial\Arial_Italic.ttf" />
+  </ItemGroup>
+
+</Project>

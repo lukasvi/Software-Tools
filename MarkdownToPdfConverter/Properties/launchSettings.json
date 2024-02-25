@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MarkdownToPdfConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "../../../example.md\r\nexample1.pdf"
+    }
+  }
+}
